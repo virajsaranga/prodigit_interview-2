@@ -170,7 +170,7 @@ p.solution-text {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #7e1416;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 70px;
   font-weight: 700;
   line-height: 95px;
@@ -180,7 +180,7 @@ p.solution-text {
 }
 
 .product-card::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -437,6 +437,7 @@ p.aboutus-text {
 button.login-btn {
   background-color: #7e1416;
   border-radius: 6px;
+  height: 40px;
 }
 
 p.login-btn-txt {
@@ -456,6 +457,18 @@ p.login-btn-txt {
 
 /* responsive slider */
 
+@media (max-width: 769px) {
+  .hero-image {
+    max-width: 400px;
+    min-width: 400px;
+    position: unset;
+    bottom: unset;
+    height: 400px;
+    padding-top: 141px;
+    bottom: 103px;
+  }
+}
+
 @media only screen and (max-width: 360px) {
   .hero-sec-title {
     font-size: 1.5em;
@@ -465,8 +478,44 @@ p.login-btn-txt {
   .hero-para2 {
     font-size: 14px;
   }
+
+  .hero-image {
+    max-width: 300px;
+    min-width: 300px;
+    position: unset;
+    bottom: unset;
+    height: 400px;
+    padding-top: 141px;
+    bottom: 103px;
+  }
+
+  .contact-us-img {
+    padding: 14px;
+    width: 100%;
+    height: 432px;
+  }
+
+  .header-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: antiquewhite;
+    font-size: 6px;
+  }
+
+  .facebook-top {
+    width: 17px;
+  }
+
+  .twitter-top {
+    width: 17px;
+  }
+
+  .youtube-top {
+    width: 17px;
+  }
+
+  .linkeddin-top {
+    width: 17px;
+  }
 }
 
-@media only screen and (max-width: 1044px) {
-  /* Add specific styles for larger screens if needed */
-}
